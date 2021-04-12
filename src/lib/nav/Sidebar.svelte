@@ -4,8 +4,9 @@
 
 <aside class="absolute w-1/2 h-full bg-gray-200 border-r-2 shadow-lg" class:open>
 	<nav class="p-12 text-xl">
-		<a class="block" href="#about">About</a>
-		<a class="block" href="#contact">Contact</a>
+		<a class="block mb-3" href="#about">Home</a>
+		<a class="block mb-3" href="#contact">Works</a>
+		<a class="block mb-3" href="#contact">About</a>
 	</nav>
 </aside>
 
