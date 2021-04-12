@@ -2,15 +2,19 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/adapter-node': next
+  '@sveltejs/adapter-static': ^1.0.0-next.0
   '@sveltejs/kit': next
   autoprefixer: ^10.2.5
   svelte: ^3.29.0
   tailwindcss: ^2.1.1
   vite: ^2.1.0
 
+dependencies:
+  '@sveltejs/adapter-static': 1.0.0-next.0
+
 devDependencies:
   '@sveltejs/adapter-node': 1.0.0-next.12
-  '@sveltejs/kit': 1.0.0-next.72_svelte@3.37.0+vite@2.1.5
+  '@sveltejs/kit': 1.0.0-next.73_svelte@3.37.0+vite@2.1.5
   autoprefixer: 10.2.5
   svelte: 3.37.0
   tailwindcss: 2.1.1_autoprefixer@10.2.5
@@ -59,8 +63,12 @@ packages:
     resolution: {integrity: sha512-DGP3dT5ijsTV0zmLDmZP8wI4RjZlifGGzA0y4HLoWNEKhZJLDjFDJnNcA+O5S9QBxQOVaYUlAY2z19r+skBVjA==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.72_svelte@3.37.0+vite@2.1.5:
-    resolution: {integrity: sha512-Rr27O2UDQcC5HWgySRMwzOxBz84rPVsZVZrcuaOXcjx7y4DvJ9boqMJVxap5tHye9Jtt39YStg9SwTQOEL60Aw==}
+  /@sveltejs/adapter-static/1.0.0-next.0:
+    resolution: {integrity: sha512-5QYrPSjfqI/Jd2av/WuwhZjRZHaWu8tGmBHM6dh5W7cd4s0PG3eW0p4eASZESHmtCFWGG00PYMRjUUFPPtEcOg==}
+    dev: false
+
+  /@sveltejs/kit/1.0.0-next.73_svelte@3.37.0+vite@2.1.5:
+    resolution: {integrity: sha512-vc8PS6S3IlpdFJ67xwkHIP8b8Nvnz53Q8yw+qkh2eOVMiDkWiOCY6QZcNNXQMq/LeuvrHTHBFlBKcjoM7Bi0sQ==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
     peerDependencies:
