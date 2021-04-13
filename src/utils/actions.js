@@ -1,4 +1,4 @@
-export function typewriter (node, { speed = 50, delay = 1000 }) {
+export function typewriter (node, { speed, delay }) {
   const valid = (
     node.childNodes.length === 1 &&
     node.childNodes[0].nodeType === Node.TEXT_NODE
