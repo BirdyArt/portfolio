@@ -1,5 +1,6 @@
 const static = require('@sveltejs/adapter-static');
 const pkg = require('./package.json');
+const { resolve } = require("path");
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -15,7 +16,13 @@ module.exports = {
 		vite: {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
+			},
+			resolve: {
+				alias: {
+					$lib: resolve(__dirname, "./src/lib"),
+					$utils: resolve(__dirname, "./src/utils")
+				}
 			}
 		}
 	}
-};
+}

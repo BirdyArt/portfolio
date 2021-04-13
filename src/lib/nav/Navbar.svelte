@@ -4,7 +4,7 @@
 	export let sidebar = false
 </script>
 
-<header class="p-2 md:ml-24 md:p-0">
+<header class="p-2 md:ml-24 md:p-0 md:fixed">
 	<nav class="flex justify-between md:mt-20">
     <img
       src="/logo.svg"
