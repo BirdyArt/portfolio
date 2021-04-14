@@ -6,20 +6,20 @@
   let visible = false;
 
   let icons = [
-      { id: 1, src: "/icons/javascript.svg", alt: "javascript icon" },
-      { id: 2, src: "/icons/css-3.svg", alt: "css-3 icon" },
-      { id: 3, src: "/icons/html-5.svg", alt: "html-5 icon" },
-      { id: 4, src: "/icons/nodejs-icon.svg", alt: "nodejs icon" },
-      { id: 5, src: "/icons/react.svg", alt: "react icon" },
-      { id: 6, src: "/icons/redux.svg", alt: "redux icon" },
-      { id: 7, src: "/icons/graphql.svg", alt: "graphql icon" },
-      { id: 8, src: "/icons/svelte-icon.svg", alt: "svelte icon" },
-      { id: 9, src: "/icons/tailwindcss-icon.svg", alt: "tailwindcss icon" },
-      { id: 10, src: "/icons/sass.svg", alt: "sass icon" },
-      { id: 11, src: "/icons/bootstrap.svg", alt: "bootstrap icon" },
-      { id: 12, src: "/icons/mongodb.svg", alt: "mongodb icon" },
-      { id: 13, src: "/icons/fauna.svg", alt: "faunadb icon" }
-    ];
+    { id: 1, src: "/icons/javascript.svg", alt: "javascript icon" },
+    { id: 2, src: "/icons/css-3.svg", alt: "css-3 icon" },
+    { id: 3, src: "/icons/html-5.svg", alt: "html-5 icon" },
+    { id: 4, src: "/icons/nodejs-icon.svg", alt: "nodejs icon" },
+    { id: 5, src: "/icons/react.svg", alt: "react icon" },
+    { id: 6, src: "/icons/redux.svg", alt: "redux icon" },
+    { id: 7, src: "/icons/graphql.svg", alt: "graphql icon" },
+    { id: 8, src: "/icons/svelte-icon.svg", alt: "svelte icon" },
+    { id: 9, src: "/icons/tailwindcss-icon.svg", alt: "tailwindcss icon" },
+    { id: 10, src: "/icons/sass.svg", alt: "sass icon" },
+    { id: 11, src: "/icons/bootstrap.svg", alt: "bootstrap icon" },
+    { id: 12, src: "/icons/mongodb.svg", alt: "mongodb icon" },
+    { id: 13, src: "/icons/fauna.svg", alt: "faunadb icon" }
+  ];
 
   onMount(() => visible = true);
 </script>
