@@ -7,4 +7,4 @@ import '../tailwind.css';
 
   <slot />
   
-<div class="custom-cursor flex items-center justify-center"><div class="p-2 rounded-full bg-black"></div></div>
+<div class="custom-cursor flex items-center justify-center bg-gray-200"><div class="p-2 rounded-full bg-black"></div></div>
