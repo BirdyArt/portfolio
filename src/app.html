@@ -1,5 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+  var cursor = document.querySelector(".custom-cursor");
+  var links = document.querySelectorAll("a");
+  var initCursor = false;
+
+  for (var i = 0; i < links.length; i++) {
+    var selfLink = links[i];
+
+    selfLink.addEventListener("mouseover", function() {
+      cursor.classList.add("custom-cursor--link");
+    });
+    selfLink.addEventListener("mouseout", function() {
+      cursor.classList.remove("custom-cursor--link");
+    });
+  }
+
+  window.onmousemove = function(e) {
+    var mouseX = e.clientX;
+    var mouseY = e.clientY;
+
+    if (!initCursor) {
+      TweenLite.to(cursor, 1, {
+        opacity: 0.5
+      });
+      initCursor = true;
+    }
+
+    TweenLite.to(cursor, 0, {
+      top: mouseY + "px",
+      left: mouseX + "px"
+    });
+  };
+
+  window.onmouseout = function(e) {
+    TweenLite.to(cursor, 0.3, {
+      opacity: 0
+    });
+    initCursor = false;
+  };
+});
+
+	</script>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
@@ -10,6 +53,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>BirdyArt | Portfolio</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 		%svelte.head%
 	</head>
 	<body>
