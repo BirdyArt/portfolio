@@ -24,7 +24,7 @@
 </script>
 
 {#if visible}
-  <div class="grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 gap-4 px-8 2xl:px-80 xl:pl-64 lg:pl-48 lg:pr-24 md:pl-36 md:pt-16">
+  <div class="grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 gap-4 px-8 2xl:px-80 xl:pl-64 lg:pl-48 lg:pr-24 md:pl-36 md:pt-16 filter grayscale hover:filter-none">
     <div class="text-center pt-10 lg:pt-16 col-span-2">
       <p class="text-4xl" in:typewriterAction={{ speed: 100, delay: 4500 }}>
         Hi! I'm Artem Sobolev aka BirdyArt
@@ -34,11 +34,11 @@
       </p>
       <div class="flex flex-wrap items-center justify-evenly pt-6">
         {#each icons as icon,i}
-          <img src={icon.src} alt={icon.alt} width="30" class="m-2 filter grayscale hover:filter-none" transition:fly="{{ x: 100, delay: 9000+i*200, duration: 2000 }}" />
+          <img src={icon.src} alt={icon.alt} width="30" class="m-2" transition:fly="{{ x: 100, delay: 9000+i*200, duration: 2000 }}" />
         {/each}
       </div>
     </div>
-    <img src="/images/profile.webp" alt="profile pic" width="300" class="rounded-full place-self-center filter grayscale hover:filter-none" />
+    <img src="/images/profile.webp" alt="profile pic" width="300" class="rounded-full place-self-center" />
   </div>
 {/if}
 

@@ -15,52 +15,82 @@
 
 <main class="text-center relative md:pb-20 px-8 2xl:px-80 xl:pl-64 lg:pl-48 lg:pr-24 md:pl-36">
   <div class="container mx-auto relative">
-    <div
-      class="grid group grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-300 hover:bg-indigo-100 filter grayscale hover:filter-none rounded-xl lg:py-10"
-    >
-     <a href="https://dshift.netlify.app/">
-      <div
-        class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-indigo-500 border-2 shadow-lg"
-      >
-        <img class="mx-auto" src="/images/logo.webp" width="250" alt="Desktop" />
-      </div>
+    <div class="grid group grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-100 hover:bg-indigo-100 filter grayscale hover:filter-none rounded-xl lg:py-10">
+      <a href="https://dshift.netlify.app/">
+        <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-indigo-500 border-2 shadow-lg">
+          <img class="mx-auto" src="/images/logo.webp" width="250" alt="Desktop" />
+        </div>
       </a>
       <div class="col-span-2 mx-5 my-5 text-left">
         <div class="flex items-center">
-        <a href="https://dshift.netlify.app/" class="text-black text-3xl group-hover:font-logo group-hover:text-indigo-500">DShift</a>
-        <div
-            class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3"
-            >#Team
-        </div>
+          <a href="https://dshift.netlify.app/" class="text-black text-3xl group-hover:font-dshift group-hover:text-indigo-500">DShift</a>
+          <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
+            #Team
+          </div>
         </div>
         <div class="flex justify-between">
-          <p class="text-black text-xl">Svelte, GraphQL, FaunaDB, TailwindCSS, Netlify</p>
+          <p class="text-black text-xl">Svelte | GraphQL | FaunaDB | TailwindCSS | Netlify</p>
           <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
       </div>
     </div>
-    <div
-      class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-300 hover:bg-yellow-100 rounded-xl lg:py-10"
-    >
+    <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-yellow-100 rounded-xl lg:py-10">
       <a href="https://library-card.netlify.app/">
-      <div
-        class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-green-600 border-2 p-[25px] shadow-lg"
-      >
-        <img class="mx-auto" src="/images/library.svg" width="200" alt="LibraryCard" />
-      </div>
+        <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-green-600 border-2 p-[25px] shadow-lg">
+          <img class="mx-auto" src="/images/library.svg" width="200" alt="LibraryCard" />
+        </div>
       </a>
       <div class="col-span-2 mx-5 my-5 text-left">
         <div class="flex items-center">
-        <a href="https://library-card.netlify.app/" class="text-black text-3xl group-hover:font-semibold group-hover:text-green-600">LibraryCard</a>
-        <div
-            class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3"
-            >#Solo
-        </div>
+          <a href="https://library-card.netlify.app/" class="text-black text-3xl group-hover:font-semibold group-hover:text-green-600">LibraryCard</a>
+          <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
+            #Solo
+          </div>
         </div>
         <div class="flex justify-between">
-          <p class="text-black text-xl">MongoDB, Express, ReactJS, NodeJS</p>
+          <p class="text-black text-xl">MongoDB | Express | ReactJS | NodeJS | SCSS</p>
           <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
+        </div>
+        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+      </div>
+    </div>
+    <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-blue-100 rounded-xl lg:py-10">
+      <a href="https://ashfaqishaq.netlify.app/">
+        <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-blue-600 border-2 p-[25px] shadow-lg">
+          <img class="mx-auto" src="/images/sun.svg" width="200" alt="LibraryCard" />
+        </div>
+      </a>
+      <div class="col-span-2 mx-5 my-5 text-left">
+        <div class="flex items-center">
+          <a href="https://ashfaqishaq.netlify.app/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-blue-600">AshfaqIshaq</a>
+          <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
+            #Solo
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-black text-xl">ReactJS | Bootstrap | GSAP | SCSS</p>
+          <a href="https://github.com/BirdyArt/ICAF" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
+        </div>
+        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+      </div>
+    </div>
+    <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-red-100 rounded-xl lg:py-10">
+      <a href="https://birdyart.github.io/Chingu/">
+        <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-red-500 border-2 p-[35px] shadow-lg">
+          <img class="mx-auto" src="/images/marker.svg" width="180" alt="LibraryCard" />
+        </div>
+      </a>
+      <div class="col-span-2 mx-5 my-5 text-left">
+        <div class="flex items-center">
+          <a href="https://birdyart.github.io/Chingu/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-red-500">MapboxApp</a>
+          <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
+            #Solo
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-black text-xl">ReactJS | Bootstrap | Mapbox API | SCSS</p>
+          <a href="https://github.com/BirdyArt/Chingu" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
       </div>

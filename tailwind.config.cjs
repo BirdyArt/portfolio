@@ -5,8 +5,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      logo: "Pacifico",
+      dshift: "Pacifico",
       main: "Quicksand, sans-serif",
+      ashfaq: "Playfair"
     }
   }
 }
