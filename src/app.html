@@ -2,46 +2,44 @@
 <html lang="en">
 	<script>
 		document.addEventListener("DOMContentLoaded", function(event) {
-  var cursor = document.querySelector(".custom-cursor");
-  var links = document.querySelectorAll("a");
-  var initCursor = false;
+      
+      if (window.innerWidth <= 768) {
+        document.getElementsByTagName('BODY')[0].style.cursor = 'default';
+      } else {
+        var cursor = document.querySelector(".custom-cursor");
+      }
+      var links = document.querySelectorAll("a");
+      var initCursor = false;
 
-  for (var i = 0; i < links.length; i++) {
-    var selfLink = links[i];
+      for (var i = 0; i < links.length; i++) {
+        var selfLink = links[i];
 
-    selfLink.addEventListener("mouseover", function() {
-      cursor.classList.add("custom-cursor--link");
+        selfLink.addEventListener("mouseover", function() {
+          cursor.classList.add("custom-cursor--link");
+        });
+        selfLink.addEventListener("mouseout", function() {
+          cursor.classList.remove("custom-cursor--link");
+        });
+      }
+
+      window.onmousemove = function(e) {
+        var mouseX = e.clientX;
+        var mouseY = e.clientY;
+
+        if (!initCursor) {
+          TweenLite.to(cursor, 1, {
+            opacity: 0.5
+          });
+          initCursor = true;
+        }
+
+        TweenLite.to(cursor, 0.3, {
+          top: mouseY + "px",
+          left: mouseX + "px"
+        });
+      };
+
     });
-    selfLink.addEventListener("mouseout", function() {
-      cursor.classList.remove("custom-cursor--link");
-    });
-  }
-
-  window.onmousemove = function(e) {
-    var mouseX = e.clientX;
-    var mouseY = e.clientY;
-
-    if (!initCursor) {
-      TweenLite.to(cursor, 1, {
-        opacity: 0.5
-      });
-      initCursor = true;
-    }
-
-    TweenLite.to(cursor, 0, {
-      top: mouseY + "px",
-      left: mouseX + "px"
-    });
-  };
-
-  window.onmouseout = function(e) {
-    TweenLite.to(cursor, 0.3, {
-      opacity: 0
-    });
-    initCursor = false;
-  };
-});
-
 	</script>
 	<head>
 		<meta charset="utf-8" />

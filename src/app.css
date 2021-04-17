@@ -19,8 +19,6 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-	border-width: 3px;
-	border-color: black;
   transition: transform 350ms ease;
   transform: translate(-50%, -50%) scale(.3);
   z-index: 1000;

@@ -65,7 +65,7 @@
         <div class="flex items-center">
           <a href="https://ashfaqishaq.netlify.app/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-blue-600">AshfaqIshaq</a>
           <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
-            #Solo
+            #Company
           </div>
         </div>
         <div class="flex justify-between">
@@ -91,6 +91,26 @@
         <div class="flex justify-between">
           <p class="text-black text-xl">ReactJS | Bootstrap | Mapbox API | SCSS</p>
           <a href="https://github.com/BirdyArt/Chingu" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
+        </div>
+        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+      </div>
+    </div>
+    <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-gray-200 rounded-xl lg:py-10">
+      <a href="https://viksmetalworks.netlify.app/">
+        <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-gray-600 border-2 p-[35px] shadow-lg">
+          <img class="mx-auto rounded-full" src="/images/VMW.svg" width="180" alt="ViksMetalWorks" />
+        </div>
+      </a>
+      <div class="col-span-2 mx-5 my-5 text-left">
+        <div class="flex items-center">
+          <a href="https://viksmetalworks.netlify.app/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-gray-600">ViksMetalWorks</a>
+          <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
+            #Company
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-black text-xl">JQuery | Bootstrap | VanillaJS | SCSS</p>
+          <a href="https://github.com/BirdyArt/ViksMetalWorks" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
       </div>
