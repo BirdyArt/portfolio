@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<header class="mt-5 mx-20 pt-10 relative">
+<header class="mt-5 mx-auto relative">
   <div class="container text-center mx-auto py-6 w-11/12">
     <h1 class="text-5xl font-semibold text-black">
       My works
@@ -13,9 +13,9 @@
   </div>
 </header>
 
-<main class="text-center relative md:pb-20 px-8 2xl:px-80 xl:pl-64 lg:pl-48 lg:pr-24 md:pl-36">
+<main class="text-center relative md:pb-20 px-8 2xl:px-72 xl:px-48 lg:px-20 md:px-16">
   <div class="container mx-auto relative">
-    <div class="grid group grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-100 hover:bg-indigo-100 filter grayscale hover:filter-none rounded-xl lg:py-10">
+    <div class="grid group grid-cols-1 justify-items-center md:grid-cols-3 p-5 bg-gray-100 hover:bg-indigo-100 filter grayscale hover:filter-none rounded-xl lg:py-10">
       <a href="https://dshift.netlify.app/">
         <div class="rounded-3xl overflow-hidden border-gray-400 group-hover:border-indigo-500 border-2 shadow-lg">
           <img class="mx-auto" src="/images/logo.webp" width="250" alt="Desktop" />
@@ -33,6 +33,9 @@
           <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <button class=" bg-indigo-500 rounded px-3 py-2 my-3 text-white group-hover:font-dshift focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+          on:click={() => {   }}>View More
+        </button>
       </div>
     </div>
     <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-yellow-100 rounded-xl lg:py-10">
@@ -53,6 +56,9 @@
           <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <button class=" bg-green-600 rounded px-3 py-2 my-3 text-white group-hover:font-semibold focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50"
+          on:click={() => {   }}>View More
+        </button>
       </div>
     </div>
     <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-blue-100 rounded-xl lg:py-10">
@@ -73,6 +79,9 @@
           <a href="https://github.com/BirdyArt/ICAF" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <button class=" bg-blue-600 rounded px-3 py-2 my-3 text-white group-hover:font-ashfaq focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+          on:click={() => {   }}>View More
+        </button>
       </div>
     </div>
     <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-red-100 rounded-xl lg:py-10">
