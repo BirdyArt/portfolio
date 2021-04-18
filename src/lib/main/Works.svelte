@@ -53,10 +53,10 @@
         </div>
         <div class="flex justify-between">
           <p class="text-black text-xl">MongoDB | Express | ReactJS | NodeJS | SCSS</p>
-          <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
+          <a href="https://github.com/BirdyArt/LibraryCard" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
-        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
-        <button class=" bg-green-600 rounded px-3 py-2 my-3 text-white group-hover:font-semibold focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50"
+        <p class="mt-5">LibraryCard is a responsive web app aimed at helping users to build a library of cards with places, people, memories, or anything you can imagine. Then they can navigate their personal collection and find the name of that cool ramen place downtown anytime, anywhere.</p>
+        <button class="bg-green-600 rounded px-3 py-2 my-3 text-white group-hover:font-semibold focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50"
           on:click={() => {   }}>View More
         </button>
       </div>
@@ -78,7 +78,7 @@
           <p class="text-black text-xl">ReactJS | Bootstrap | GSAP | SCSS</p>
           <a href="https://github.com/BirdyArt/ICAF" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
-        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <p class="mt-5">Landing page that was created for International Child Art Foundation founder - Ashfaq Ishaq. It showcases his new book "Anti-Children" and serves as media addition to book itself - visitors can navigate to certain chapter and view artwork, videos and other book-related content.</p>
         <button class=" bg-blue-600 rounded px-3 py-2 my-3 text-white group-hover:font-ashfaq focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
           on:click={() => {   }}>View More
         </button>
@@ -92,7 +92,7 @@
       </a>
       <div class="col-span-2 mx-5 my-5 text-left">
         <div class="flex items-center">
-          <a href="https://birdyart.github.io/Chingu/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-red-500">MapboxApp</a>
+          <a href="https://birdyart.github.io/Chingu/" class="text-black text-3xl group-hover:font-mapbox group-hover:text-red-500">MapboxApp</a>
           <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
             #Solo
           </div>
@@ -101,7 +101,10 @@
           <p class="text-black text-xl">ReactJS | Bootstrap | Mapbox API | SCSS</p>
           <a href="https://github.com/BirdyArt/Chingu" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
-        <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <p class="mt-5">This app shows a map of Vancouver, Canada with unique location markers. You can toggle icon and filter different locations. I created this app to showcase Mapbox API usage</p>
+        <button class=" bg-red-500 rounded px-3 py-2 my-3 text-white group-hover:font-mapbox focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+          on:click={() => {   }}>View More
+        </button>
       </div>
     </div>
     <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 filter grayscale hover:filter-none bg-gray-100 hover:bg-gray-200 rounded-xl lg:py-10">
@@ -112,7 +115,7 @@
       </a>
       <div class="col-span-2 mx-5 my-5 text-left">
         <div class="flex items-center">
-          <a href="https://viksmetalworks.netlify.app/" class="text-black text-3xl group-hover:font-ashfaq group-hover:text-gray-600">ViksMetalWorks</a>
+          <a href="https://viksmetalworks.netlify.app/" class="text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600">ViksMetalWorks</a>
           <div class="text-white text-lg bg-yellow-600 rounded-md ml-2 py-1 px-3">
             #Company
           </div>
@@ -122,6 +125,9 @@
           <a href="https://github.com/BirdyArt/ViksMetalWorks" class="flex items-center text-lg"><img src="/icons/github-octocat.svg" width="30" alt="Github" />GitHub</a>
         </div>
         <p class="mt-5">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+        <button class=" bg-gray-600 rounded px-3 py-2 my-3 text-white group-hover:font-viks focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
+          on:click={() => {   }}>View More
+        </button>
       </div>
     </div>
   </div>

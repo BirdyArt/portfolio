@@ -7,7 +7,9 @@ module.exports = {
     fontFamily: {
       dshift: "Pacifico",
       main: "Quicksand, sans-serif",
-      ashfaq: "Playfair"
+      ashfaq: "Playfair",
+      mapbox: "Open Sans",
+      viks: "Play"
     }
   }
 }
