@@ -23,6 +23,17 @@ body {
   transform: translate(-50%, -50%) scale(.3);
   z-index: 1000;
 }
+
+.custom-dot {
+  position: fixed;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(.3);
+  z-index: 1000;
+}
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(0.5);
 }

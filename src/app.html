@@ -7,9 +7,11 @@
         document.getElementsByTagName('BODY')[0].style.cursor = 'default';
       } else {
         var cursor = document.querySelector(".custom-cursor");
+        var dot = document.querySelector(".custom-dot");
       }
 
       var initCursor = false;
+      var initDot = false;
 
       setTimeout(function(){
         var links = document.querySelectorAll("a");
@@ -43,14 +45,23 @@
         var mouseX = e.clientX;
         var mouseY = e.clientY;
 
-        if (!initCursor) {
+        if (!initCursor && !initDot) {
           TweenLite.to(cursor, 1, {
             opacity: 0.5
           });
+          TweenLite.to(dot, 1, {
+            opacity: 1
+          });
           initCursor = true;
+          initDot = true;
         }
 
-        TweenLite.to(cursor, 0.3, {
+        TweenLite.to(cursor, 0.5, {
+          top: mouseY + "px",
+          left: mouseX + "px"
+        });
+        
+        TweenLite.to(dot, 0, {
           top: mouseY + "px",
           left: mouseX + "px"
         });
