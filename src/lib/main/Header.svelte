@@ -31,29 +31,29 @@
 </script>
 
 {#if visible}
-  <div class="pt-8 lg:pt-16 px-8 2xl:px-72 xl:px-48 lg:px-20 md:px-16 filter grayscale hover:filter-none">
+  <div class="pt-8 lg:pt-16 px-8 2xl:px-72 xl:px-48 lg:px-16 md:px-16 filter grayscale hover:filter-none">
     <div class="md:flex md:justify-between container mx-auto relative">
-      <div class="items-center bg-green-100 rounded-xl pl-8 pt-8 w-full">
+      <div class="items-center bg-green-100 rounded-xl pl-8 pt-8 w-full" transition:fly="{{ x: 100, delay: 4300, duration: 2000 }}">
         <div>
-          <p class="text-4xl lg:text-3xl" in:typewriterAction={{ speed: 100, delay: 4500 }}>
+          <p class="text-4xl lg:text-3xl" in:typewriterAction={{ speed: 50, delay: 5000 }}>
             Hi! I'm Artem Sobolev
           </p>
           <div class="flex flex-wrap items-center justify-left pt-5">
             {#each socialIcons as icon,i}
-              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="md:mr-8 mr-4 my-1" transition:fly="{{ x: 100, delay: 6500 + i*100, duration: 2000 }}" /></a>
+              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mr-4 my-1" transition:fly="{{ x: 100, delay: 5000 + i*100, duration: 2000 }}" /></a>
             {/each}
           </div>
-          <p class="text-xl md:text-xl pt-5" in:typewriterAction={{ speed: 100, delay: 7200 }}>
+          <p class="text-xl md:text-xl pt-5" in:typewriterAction={{ speed: 50, delay: 6500 }}>
             Frontend Developer skilled in:
           </p>
           <div class="flex flex-wrap items-center justify-left py-5">
             {#each icons as icon,i}
-              <img src={icon.src} alt={icon.alt} width="30" class="md:mr-8 mr-4 my-1" transition:fly="{{ x: 100, delay: 10500 + i*100, duration: 2000 }}" />
+              <img src={icon.src} alt={icon.alt} width="30" class="mr-4 my-1" transition:fly="{{ x: 100, delay: 7900 + i*100, duration: 2000 }}" />
             {/each}
           </div>
         </div>  
       </div>
-      <img src="/images/profile.webp" alt="profile pic" width="350" class="-ml-40 -my-8 rounded-full" /> 
+      <img src="/images/profile.webp" alt="profile pic" width="350" class="-ml-40 -my-8 rounded-full z-10" /> 
     </div>
   </div>
 {/if}

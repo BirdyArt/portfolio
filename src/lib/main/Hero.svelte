@@ -50,12 +50,12 @@
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 		<g out:fade="{{duration: 200}}" opacity=0.2>
 			<path
-				in:draw="{{duration: 2000, delay: 1000}}"
+				in:draw="{{duration: 1700, delay: 500}}"
 				style="stroke: #000; stroke-width: 3;"
 				d={outer}
 			/>
 			<path
-				in:draw="{{duration: 2000}}"
+				in:draw="{{duration: 1700}}"
 				style="stroke:#000; stroke-width: 3"
 				d={inner}
 			/>
@@ -65,7 +65,7 @@
 	<div class="centered" out:fly="{{y: -20, duration: 800}}">
 		{#each 'BIRDY ART' as char, i}
 			<span
-				in:fade="{{delay: 1000 + i * 150, duration: 800}}"
+				in:fade="{{delay: 1500 + i * 150, duration: 800}}"
 			>{char}</span>
 		{/each}
 	</div>

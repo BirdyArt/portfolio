@@ -13,7 +13,7 @@
   </div>
 </header>
 
-<main class="text-center relative md:pb-20 px-8 2xl:px-72 xl:px-48 lg:px-20 md:px-16">
+<main class="text-center relative md:pb-20 px-8 2xl:px-72 xl:px-48 lg:px-16 md:px-16">
   <div class="container mx-auto relative">
     <div class="grid group grid-cols-1 justify-items-center md:grid-cols-3 p-5 bg-gray-100 hover:bg-indigo-100 filter grayscale hover:filter-none rounded-xl lg:py-10">
       <a href="https://dshift.netlify.app/" target="_blank">
