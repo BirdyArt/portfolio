@@ -3,7 +3,15 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
 
+  let innerWidth, desktop = 100, mobile = 0;
   let visible = false;
+
+  $:if (innerWidth <= 768) {
+    desktop = 0;
+    mobile = 100;
+  };
+
+  $: console.log(desktop)
 
   let icons = [
     { id: 1, src: "/icons/javascript.svg", alt: "javascript icon" },
@@ -30,30 +38,32 @@
   onMount(() => visible = true);
 </script>
 
+<svelte:window bind:innerWidth={innerWidth} />
+
 {#if visible}
-  <div class="pt-8 lg:pt-16 px-8 2xl:px-72 xl:px-48 lg:px-16 md:px-16 filter grayscale hover:filter-none">
-    <div class="md:flex md:justify-between container mx-auto relative">
-      <div class="items-center bg-green-100 rounded-xl pl-8 pt-8 w-full" transition:fly="{{ x: 100, delay: 4300, duration: 2000 }}">
+  <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12 filter grayscale hover:filter-none">
+    <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative">
+      <div class="items-center text-center md:text-left bg-green-100 rounded-xl md:pl-8 pb-0 pt-48 md:pt-6 lg:py-4 lg:pb-0 -mt-40 md:mt-0 w-full order-last md:order-none" transition:fly="{{ x: desktop, y: mobile, delay: 4300, duration: 1500 }}">
         <div>
-          <p class="text-4xl lg:text-3xl" in:typewriterAction={{ speed: 50, delay: 5000 }}>
+          <p class="text-3xl" in:typewriterAction={{ speed: 50, delay: 5000 }}>
             Hi! I'm Artem Sobolev
           </p>
-          <div class="flex flex-wrap items-center justify-left pt-5">
+          <div class="flex flex-wrap items-center justify-center md:justify-start pt-3">
             {#each socialIcons as icon,i}
-              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mr-4 my-1" transition:fly="{{ x: 100, delay: 5000 + i*100, duration: 2000 }}" /></a>
+              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4" transition:fly="{{ x: 100, delay: 5000 + i*100, duration: 2000 }}" /></a>
             {/each}
           </div>
-          <p class="text-xl md:text-xl pt-5" in:typewriterAction={{ speed: 50, delay: 6500 }}>
+          <p class="text-xl py-3" in:typewriterAction={{ speed: 50, delay: 6500 }}>
             Frontend Developer skilled in:
           </p>
-          <div class="flex flex-wrap items-center justify-left py-5">
+          <div class="flex flex-wrap items-center justify-center md:justify-start pr-0 md:pr-48 lg:pr-0">
             {#each icons as icon,i}
-              <img src={icon.src} alt={icon.alt} width="30" class="mr-4 my-1" transition:fly="{{ x: 100, delay: 7900 + i*100, duration: 2000 }}" />
+              <img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4 md:ml-0 mb-3" transition:fly="{{ x: 100, delay: 7900 + i*100, duration: 2000 }}" />
             {/each}
           </div>
         </div>  
       </div>
-      <img src="/images/profile.webp" alt="profile pic" width="350" class="-ml-40 -my-8 rounded-full z-10" /> 
+      <img src="/images/profile.webp" alt="profile pic" class="md:-ml-40 md:-my-7 lg:-my-16 rounded-full w-[350px] z-10" /> 
     </div>
   </div>
 {/if}
