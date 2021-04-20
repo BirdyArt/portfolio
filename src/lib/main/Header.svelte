@@ -6,7 +6,7 @@
   let innerWidth, desktop = 100, mobile = 0;
   let visible = false;
 
-  $:if (innerWidth <= 768) {
+  $:if (innerWidth < 768) {
     desktop = 0;
     mobile = 100;
   };
@@ -45,7 +45,7 @@
     <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative">
       <div class="items-center text-center md:text-left bg-green-100 rounded-xl md:pl-8 pb-0 pt-48 md:pt-6 lg:py-4 lg:pb-0 -mt-40 md:mt-0 w-full order-last md:order-none" transition:fly="{{ x: desktop, y: mobile, delay: 4300, duration: 1500 }}">
         <div>
-          <p class="text-3xl" in:typewriterAction={{ speed: 50, delay: 5000 }}>
+          <p class="text-3xl 2xl:pt-2" in:typewriterAction={{ speed: 50, delay: 5000 }}>
             Hi! I'm Artem Sobolev
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pt-3">
@@ -63,7 +63,9 @@
           </div>
         </div>  
       </div>
-      <img src="/images/profile.webp" alt="profile pic" class="md:-ml-40 md:-my-7 lg:-my-16 rounded-full w-[350px] z-10" /> 
+      <div class="md:-ml-40 md:-my-7 lg:-my-16 z-10 md:w-[430px] lg:w-[420px]">
+        <img src="/images/profile.webp" alt="profile pic" class="rounded-full"/> 
+      </div>
     </div>
   </div>
 {/if}
