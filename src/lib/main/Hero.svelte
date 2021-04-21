@@ -29,7 +29,8 @@
 	}
 
 	.centered {
-		font-size: 8.2vw;
+		font-size: 12vw;
+		width: 100%;
 		position: absolute;
 		left: 50%;
 		top: 50%;
@@ -62,7 +63,7 @@
 		</g>
 	</svg>
 
-	<div class="centered" out:fly="{{y: -20, duration: 800}}">
+	<div class="centered text-center" out:fly="{{y: -20, duration: 800}}">
 		{#each 'BIRDY ART' as char, i}
 			<span
 				in:fade="{{delay: 1500 + i * 150, duration: 800}}"

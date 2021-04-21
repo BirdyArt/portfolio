@@ -11,8 +11,6 @@
     mobile = 100;
   };
 
-  $: console.log(desktop)
-
   let icons = [
     { id: 1, src: "/icons/javascript.svg", alt: "javascript icon" },
     { id: 2, src: "/icons/css-3.svg", alt: "css-3 icon" },
@@ -41,29 +39,29 @@
 <svelte:window bind:innerWidth={innerWidth} />
 
 {#if visible}
-  <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12 filter grayscale hover:filter-none">
+  <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12 md:filter filter-none md:grayscale hover:filter-none group">
     <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative">
       <div class="items-center text-center md:text-left bg-green-100 rounded-xl md:pl-8 pb-0 pt-48 md:pt-6 lg:py-4 lg:pb-0 -mt-40 md:mt-0 w-full order-last md:order-none" transition:fly="{{ x: desktop, y: mobile, delay: 4300, duration: 1500 }}">
         <div>
-          <p class="text-3xl 2xl:pt-2" in:typewriterAction={{ speed: 50, delay: 5000 }}>
+          <p class="text-3xl 2xl:pt-2 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 5000 }}>
             Hi! I'm Artem Sobolev
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pt-3">
             {#each socialIcons as icon,i}
-              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4" transition:fly="{{ x: 100, delay: 5000 + i*100, duration: 2000 }}" /></a>
+              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4" transition:fly="{{ x: desktop, y: mobile, delay: 5000 + i*100, duration: 2000 }}" /></a>
             {/each}
           </div>
-          <p class="text-xl py-3" in:typewriterAction={{ speed: 50, delay: 6500 }}>
+          <p class="text-xl py-3 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 6500 }}>
             Frontend Developer skilled in:
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pr-0 md:pr-48 lg:pr-0">
             {#each icons as icon,i}
-              <img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4 md:ml-0 mb-3" transition:fly="{{ x: 100, delay: 7900 + i*100, duration: 2000 }}" />
+              <img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4 md:ml-0 mb-3" transition:fly="{{ x: desktop, y: mobile, delay: 7900 + i*100, duration: 2000 }}" />
             {/each}
           </div>
         </div>  
       </div>
-      <div class="md:-ml-40 md:-my-7 lg:-my-16 z-10 md:w-[430px] lg:w-[420px]">
+      <div class="md:-ml-40 md:-my-7 lg:-my-16 z-10 w-[350px] md:w-[430px] lg:w-[420px]">
         <img src="/images/profile.webp" alt="profile pic" class="rounded-full"/> 
       </div>
     </div>

@@ -5,11 +5,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      sans: "Roboto Condensed",
       dshift: "Pacifico",
       main: "Quicksand, sans-serif",
       ashfaq: "Playfair",
       mapbox: "Open Sans",
-      viks: "Play"
+      viks: "Play",
+      main2: "Raleway",
+      display: "Righteous",
+      header: "Zen Dots"
     }
   }
 }
