@@ -12,8 +12,7 @@ module.exports = {
       mapbox: "Open Sans",
       viks: "Play",
       main2: "Raleway",
-      display: "Righteous",
-      header: "Zen Dots"
+      display: "Righteous"
     }
   }
 }

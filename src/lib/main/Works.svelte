@@ -1,16 +1,19 @@
 <script>
   import { fly } from 'svelte/transition';
   import { onMount } from 'svelte';
+  import ModalDshift from '$lib/modals/ModalDshift.svelte';
 
 
   let innerWidth, desktop = 100, mobile = 0;
   let visible = false;
+  let viewDshift = false;
 
   $:if (innerWidth < 768) {
     desktop = 0;
     mobile = 100;
   };
   onMount(() => visible = true);
+
 </script>
 
 {#if visible}
@@ -45,10 +48,11 @@
             <p class="text-lg text-left font-main md:font-sans group-hover:font-main">Svelte | GraphQL | FaunaDB | TailwindCSS | Netlify</p>
             <a href="https://github.com/chingu-voyages/v28-svelte-team-09" class="flex items-center text-lg pt-3 md:pt-0 font-main md:font-sans group-hover:font-main" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
           </div>
-          <p class="mt-3 text-left font-main md:font-sans group-hover:font-main">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+          <p class="mt-3 text-left font-main md:font-sans group-hover:font-main">A blazing fast shift management web app sporting a surprisingly simple interface. You can schedule employees for different areas, specify working hours and break time. Then it could be published, and employees could check it using provided link.</p>
           <button class="bg-indigo-500 rounded px-3 py-2 my-3 text-white font-main md:font-sans group-hover:font-main focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50"
-            on:click={() => {   }}>View More
+            on:click={() => (viewDshift = true)}>View More
           </button>
+          <ModalDshift bind:open={viewDshift} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-yellow-100 md:bg-gray-100 hover:bg-yellow-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10200, duration: 2000 }}">
@@ -137,7 +141,7 @@
             <p class="text-lg text-left font-viks md:font-sans group-hover:font-viks">JQuery | Bootstrap | VanillaJS | SCSS</p>
             <a href="https://github.com/BirdyArt/ViksMetalWorks" class="flex items-center text-lg pt-3 md:pt-0 font-viks md:font-sans group-hover:font-viks" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
           </div>
-          <p class="mt-3 text-left font-viks md:font-sans group-hover:font-viks">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+          <p class="mt-3 text-left font-viks md:font-sans group-hover:font-viks">SPA created for metal-working shop to showcase different products. It has multiple pages and it is available in 2 languages on button toggle: Russian and English</p>
           <button class=" bg-gray-600 rounded px-3 py-2 my-3 text-white font-viks md:font-sans group-hover:font-viks focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50"
             on:click={() => {   }}>View More
           </button>

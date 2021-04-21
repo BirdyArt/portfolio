@@ -39,8 +39,8 @@
 <svelte:window bind:innerWidth={innerWidth} />
 
 {#if visible}
-  <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12 md:filter filter-none md:grayscale hover:filter-none group">
-    <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative">
+  <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12">
+    <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative md:filter filter-none md:grayscale hover:filter-none group">
       <div class="items-center text-center md:text-left bg-green-100 rounded-xl md:pl-8 pb-0 pt-48 md:pt-6 lg:py-4 lg:pb-0 -mt-40 md:mt-0 w-full order-last md:order-none" transition:fly="{{ x: desktop, y: mobile, delay: 4300, duration: 1500 }}">
         <div>
           <p class="text-3xl 2xl:pt-2 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 5000 }}>
