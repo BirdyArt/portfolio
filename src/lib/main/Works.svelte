@@ -2,11 +2,12 @@
   import { fly } from 'svelte/transition';
   import { onMount } from 'svelte';
   import ModalDshift from '$lib/modals/ModalDshift.svelte';
-
+import ModalLibrarycard from '$lib/modals/ModalLibrarycard.svelte';
 
   let innerWidth, desktop = 100, mobile = 0;
   let visible = false;
   let viewDshift = false;
+  let viewLibrarycard = false;
 
   $:if (innerWidth < 768) {
     desktop = 0;
@@ -74,8 +75,9 @@
           </div>
           <p class="mt-3 text-left font-normal md:font-sans group-hover:font-normal">LibraryCard is a responsive web app aimed at helping users to build a library of cards with places, people, memories, or anything you can imagine. Then they can navigate their personal collection and find the name of that cool ramen place downtown anytime, anywhere.</p>
           <button class="bg-green-600 rounded px-3 py-2 my-3 text-white font-normal md:font-sans group-hover:font-normal focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50"
-            on:click={() => {   }}>View More
+            on:click={() => (viewLibrarycard = true)}>View More
           </button>
+          <ModalLibrarycard bind:open={viewLibrarycard} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-blue-100 md:bg-gray-100 hover:bg-blue-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10400, duration: 2000 }}">
@@ -88,7 +90,7 @@
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://ashfaqishaq.netlify.app/" class="text-blue-600 md:text-black text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600" target="_blank">AshfaqIshaq</a>
             <div class="text-white text-lg bg-blue-600 font-main2 md:font-sans group-hover:font-main2 rounded-md ml-2 py-1 px-3">
-              #Company
+              #Solo
             </div>
           </div>
           <div class="md:flex md:justify-between">
@@ -134,7 +136,7 @@
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://viksmetalworks.netlify.app/" class="text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600" target="_blank">ViksMetalWorks</a>
             <div class="text-white text-lg bg-gray-600 rounded-md ml-2 py-1 px-3 font-viks md:font-sans group-hover:font-viks">
-              #Company
+              #Solo
             </div>
           </div>
           <div class="md:flex md:justify-between">
