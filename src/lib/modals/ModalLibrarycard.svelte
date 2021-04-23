@@ -15,5 +15,7 @@ let clickOutside = true;
     <img class="mx-auto rounded-lg" src="/gifs/librarycard/addcards.gif" width="600" alt="Add employees" />
     <h3 class="text-center pb-4 pt-8 font-semibold">You can upload you own icon or use Iconfinder API</h3>
     <img class="mx-auto rounded-lg" src="/gifs/librarycard/iconfinder.gif" width="600" alt="Add shifts" />
+     <h3 class="text-center pb-4 pt-8 font-semibold">Fully responsive</h3>
+    <img class="mx-auto rounded-lg" src="/gifs/librarycard/responsive.gif" width="600" alt="Add shifts" />
   </div>
 </ModalBox>

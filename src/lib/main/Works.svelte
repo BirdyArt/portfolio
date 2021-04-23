@@ -3,11 +3,18 @@
   import { onMount } from 'svelte';
   import ModalDshift from '$lib/modals/ModalDshift.svelte';
 import ModalLibrarycard from '$lib/modals/ModalLibrarycard.svelte';
+import ModalAshfaq from '$lib/modals/ModalAshfaq.svelte';
+import ModalMapbox from '$lib/modals/ModalMapbox.svelte';
+import ModalViks from '$lib/modals/ModalViks.svelte';
+
 
   let innerWidth, desktop = 100, mobile = 0;
   let visible = false;
   let viewDshift = false;
   let viewLibrarycard = false;
+  let viewAshfaq = false;
+  let viewMapbox = false;
+  let viewViks = false;
 
   $:if (innerWidth < 768) {
     desktop = 0;
@@ -99,8 +106,9 @@ import ModalLibrarycard from '$lib/modals/ModalLibrarycard.svelte';
           </div>
           <p class="mt-3 text-left font-main2 md:font-sans group-hover:font-main2">Landing page that was created for International Child Art Foundation (ICAF) founder - Ashfaq Ishaq. It showcases his new book "Anti-Children" and serves as media addition to book itself - visitors can navigate to certain chapter and view artwork, videos and other book-related content.</p>
           <button class=" bg-blue-600 rounded px-3 py-2 my-3 text-white font-main2 md:font-sans group-hover:font-main2 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
-            on:click={() => {   }}>View More
+            on:click={() => (viewAshfaq = true)}>View More
           </button>
+          <ModalAshfaq bind:open={viewAshfaq} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-red-100 md:bg-gray-100 hover:bg-red-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10600, duration: 2000 }}">
@@ -122,8 +130,9 @@ import ModalLibrarycard from '$lib/modals/ModalLibrarycard.svelte';
           </div>
           <p class="mt-3 text-left font-mapbox md:font-sans group-hover:font-mapbox">This app shows a map of Vancouver, Canada with unique location markers. You can toggle icon and filter different locations. I created this app to showcase Mapbox API usage</p>
           <button class=" bg-red-500 rounded px-3 py-2 my-3 text-white font-mapbox md:font-sans group-hover:font-mapbox focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50"
-            on:click={() => {   }}>View More
+            on:click={() => (viewMapbox = true)}>View More
           </button>
+          <ModalMapbox bind:open={viewMapbox} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-200 md:bg-gray-100 hover:bg-gray-200 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10800, duration: 2000 }}">
@@ -145,8 +154,9 @@ import ModalLibrarycard from '$lib/modals/ModalLibrarycard.svelte';
           </div>
           <p class="mt-3 text-left font-viks md:font-sans group-hover:font-viks">SPA created for metal-working shop to showcase different products. It has multiple pages and it is available in 2 languages on button toggle: Russian and English</p>
           <button class=" bg-gray-600 rounded px-3 py-2 my-3 text-white font-viks md:font-sans group-hover:font-viks focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50"
-            on:click={() => {   }}>View More
+            on:click={() => (viewViks = true)}>View More
           </button>
+          <ModalViks bind:open={viewViks} />
         </div>
       </div>
     </div>
