@@ -45,7 +45,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <img class="mx-auto" src="/images/logo.webp" width="250" alt="Desktop" />
           </div>
         </a>
-        <div class="col-span-2 mx-5 mt-5 md:text-left text-indigo-500 md:text-black group-hover:text-indigo-500">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-indigo-500 md:text-black group-hover:text-indigo-500">
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://dshift.netlify.app/" class="text-indigo-500 md:text-black text-3xl font-dshift md:font-sans group-hover:font-dshift group-hover:text-indigo-500" target="_blank">DShift</a>
             <div class="text-white text-lg bg-indigo-500 font-main md:font-sans group-hover:font-main rounded-md ml-2 py-1 px-3">
@@ -69,7 +69,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <img class="mx-auto" src="/images/library.svg" width="200" alt="LibraryCard" />
           </div>
         </a>
-        <div class="col-span-2 mx-5 mt-5 md:text-left text-green-600 md:text-black group-hover:text-green-600">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-green-600 md:text-black group-hover:text-green-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://library-card.netlify.app/" class="text-green-600 md:text-black text-3xl font-semibold md:font-normal md:font-sans group-hover:font-semibold group-hover:text-green-600" target="_blank">LibraryCard</a>
             <div class="text-white text-lg bg-green-600 font-normal md:font-sans group-hover:font-normal rounded-md ml-2 py-1 px-3">
@@ -93,7 +93,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <img class="mx-auto" src="/images/sun.svg" width="200" alt="LibraryCard" />
           </div>
         </a>
-        <div class="col-span-2 mx-5 mt-5 md:text-left text-blue-600 md:text-black group-hover:text-blue-600">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-blue-600 md:text-black group-hover:text-blue-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://ashfaqishaq.netlify.app/" class="text-blue-600 md:text-black text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600" target="_blank">AshfaqIshaq</a>
             <div class="text-white text-lg bg-blue-600 font-main2 md:font-sans group-hover:font-main2 rounded-md ml-2 py-1 px-3">
@@ -117,7 +117,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <img class="mx-auto" src="/images/marker.svg" width="180" alt="MapboxApp" />
           </div>
         </a>
-        <div class="col-span-2 mx-5 mt-5 md:text-left text-red-500 md:text-black group-hover:text-red-500">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-red-500 md:text-black group-hover:text-red-500">
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://birdyart.github.io/Chingu/" class="text-red-500 md:text-black text-3xl font-mapbox md:font-sans group-hover:font-mapbox group-hover:text-red-500" target="_blank">MapboxApp</a>
             <div class="text-white text-lg bg-red-500 rounded-md ml-2 py-1 px-3 font-mapbox md:font-sans group-hover:font-mapbox">
@@ -129,7 +129,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <a href="https://github.com/BirdyArt/Chingu" class="flex items-center text-lg pt-3 md:pt-0 font-mapbox md:font-sans group-hover:font-mapbox" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
           </div>
           <p class="mt-3 text-left font-mapbox md:font-sans group-hover:font-mapbox">This app shows a map of Vancouver, Canada with unique location markers. You can toggle icon and filter different locations. I created this app to showcase Mapbox API usage</p>
-          <button class=" bg-red-500 rounded px-3 py-2 my-3 text-white font-mapbox md:font-sans group-hover:font-mapbox focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50"
+          <button class="bg-red-500 rounded px-3 py-2 my-3 text-white font-mapbox md:font-sans group-hover:font-mapbox focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50"
             on:click={() => (viewMapbox = true)}>View More
           </button>
           <ModalMapbox bind:open={viewMapbox} />
@@ -141,7 +141,7 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
             <img class="mx-auto rounded-full" src="/images/VMW.svg" width="180" alt="ViksMetalWorks" />
           </div>
         </a>
-        <div class="col-span-2 mx-5 mt-5 md:text-left text-gray-600 md:text-black group-hover:text-gray-600">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-gray-600 md:text-black group-hover:text-gray-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
             <a href="https://viksmetalworks.netlify.app/" class="text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600" target="_blank">ViksMetalWorks</a>
             <div class="text-white text-lg bg-gray-600 rounded-md ml-2 py-1 px-3 font-viks md:font-sans group-hover:font-viks">

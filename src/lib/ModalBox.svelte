@@ -27,7 +27,7 @@
       >
 
       <div
-        class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full"
+        class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform sm:my-8 sm:align-middle sm:max-w-xl md:max-w-2xl lg:max-w-4xl sm:w-full"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
