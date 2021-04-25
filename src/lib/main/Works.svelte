@@ -87,28 +87,28 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
           <ModalLibrarycard bind:open={viewLibrarycard} />
         </div>
       </div>
-      <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-blue-100 md:bg-gray-100 hover:bg-blue-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10400, duration: 2000 }}">
-        <a href="https://ashfaqishaq.netlify.app/" target="_blank" class="my-auto">
-          <div class="rounded-3xl overflow-hidden border-blue-600 md:border-gray-400 group-hover:border-blue-600 border-2 p-[25px] shadow-lg">
-            <img class="mx-auto" src="/images/sun.svg" width="200" alt="LibraryCard" />
+      <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-200 md:bg-gray-100 hover:bg-gray-200 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10400, duration: 2000 }}">
+        <a href="https://viksmetalworks.netlify.app/" target="_blank" class="my-auto">
+          <div class="rounded-3xl overflow-hidden border-gray-600 md:border-gray-400 group-hover:border-gray-600 border-2 p-[35px] shadow-lg">
+            <img class="mx-auto rounded-full" src="/images/VMW.svg" width="180" alt="ViksMetalWorks" />
           </div>
         </a>
-        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-blue-600 md:text-black group-hover:text-blue-600">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-gray-600 md:text-black group-hover:text-gray-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <a href="https://ashfaqishaq.netlify.app/" class="text-blue-600 md:text-black text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600" target="_blank">AshfaqIshaq</a>
-            <div class="text-white text-lg bg-blue-600 font-main2 md:font-sans group-hover:font-main2 rounded-md ml-2 py-1 px-3">
+            <a href="https://viksmetalworks.netlify.app/" class="text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600" target="_blank">ViksMetalWorks</a>
+            <div class="text-white text-lg bg-gray-600 rounded-md ml-2 py-1 px-3 font-viks md:font-sans group-hover:font-viks">
               #Solo
             </div>
           </div>
           <div class="md:flex md:justify-between">
-            <p class="text-lg text-left font-main2 md:font-sans group-hover:font-main2">ReactJS | Bootstrap | GSAP | SCSS</p>
-            <a href="https://github.com/BirdyArt/ICAF" class="flex items-center text-lg pt-3 md:pt-0 font-main2 md:font-sans group-hover:font-main2" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
+            <p class="text-lg text-left font-viks md:font-sans group-hover:font-viks">JQuery | Bootstrap | VanillaJS | SCSS</p>
+            <a href="https://github.com/BirdyArt/ViksMetalWorks" class="flex items-center text-lg pt-3 md:pt-0 font-viks md:font-sans group-hover:font-viks" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
           </div>
-          <p class="mt-3 text-left font-main2 md:font-sans group-hover:font-main2">Landing page that was created for International Child Art Foundation (ICAF) founder - Ashfaq Ishaq. It showcases his new book "Anti-Children" and serves as media addition to book itself - visitors can navigate to certain chapter and view artwork, videos and other book-related content.</p>
-          <button class=" bg-blue-600 rounded px-3 py-2 my-3 text-white font-main2 md:font-sans group-hover:font-main2 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
-            on:click={() => (viewAshfaq = true)}>View More
+          <p class="mt-3 text-left font-viks md:font-sans group-hover:font-viks">SPA created for metal-working shop to showcase different products. It has multiple pages and it is available in 2 languages on button toggle: Russian and English</p>
+          <button class=" bg-gray-600 rounded px-3 py-2 my-3 text-white font-viks md:font-sans group-hover:font-viks focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50"
+            on:click={() => (viewViks = true)}>View More
           </button>
-          <ModalAshfaq bind:open={viewAshfaq} />
+          <ModalViks bind:open={viewViks} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-red-100 md:bg-gray-100 hover:bg-red-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10600, duration: 2000 }}">
@@ -135,28 +135,28 @@ import ModalViks from '$lib/modals/ModalViks.svelte';
           <ModalMapbox bind:open={viewMapbox} />
         </div>
       </div>
-      <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-200 md:bg-gray-100 hover:bg-gray-200 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10800, duration: 2000 }}">
-        <a href="https://viksmetalworks.netlify.app/" target="_blank" class="my-auto">
-          <div class="rounded-3xl overflow-hidden border-gray-600 md:border-gray-400 group-hover:border-gray-600 border-2 p-[35px] shadow-lg">
-            <img class="mx-auto rounded-full" src="/images/VMW.svg" width="180" alt="ViksMetalWorks" />
+      <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-blue-100 md:bg-gray-100 hover:bg-blue-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10800, duration: 2000 }}">
+        <a href="https://ashfaqishaq.netlify.app/" target="_blank" class="my-auto">
+          <div class="rounded-3xl overflow-hidden border-blue-600 md:border-gray-400 group-hover:border-blue-600 border-2 p-[25px] shadow-lg">
+            <img class="mx-auto" src="/images/sun.svg" width="200" alt="LibraryCard" />
           </div>
         </a>
-        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-gray-600 md:text-black group-hover:text-gray-600">
+        <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-blue-600 md:text-black group-hover:text-blue-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <a href="https://viksmetalworks.netlify.app/" class="text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600" target="_blank">ViksMetalWorks</a>
-            <div class="text-white text-lg bg-gray-600 rounded-md ml-2 py-1 px-3 font-viks md:font-sans group-hover:font-viks">
+            <a href="https://ashfaqishaq.netlify.app/" class="text-blue-600 md:text-black text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600" target="_blank">AshfaqIshaq</a>
+            <div class="text-white text-lg bg-blue-600 font-main2 md:font-sans group-hover:font-main2 rounded-md ml-2 py-1 px-3">
               #Solo
             </div>
           </div>
           <div class="md:flex md:justify-between">
-            <p class="text-lg text-left font-viks md:font-sans group-hover:font-viks">JQuery | Bootstrap | VanillaJS | SCSS</p>
-            <a href="https://github.com/BirdyArt/ViksMetalWorks" class="flex items-center text-lg pt-3 md:pt-0 font-viks md:font-sans group-hover:font-viks" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
+            <p class="text-lg text-left font-main2 md:font-sans group-hover:font-main2">ReactJS | Bootstrap | GSAP | SCSS</p>
+            <a href="https://github.com/BirdyArt/ICAF" class="flex items-center text-lg pt-3 md:pt-0 font-main2 md:font-sans group-hover:font-main2" target="_blank"><img src="/icons/github-octocat.svg" width="30" alt="Github"/>GitHub</a>
           </div>
-          <p class="mt-3 text-left font-viks md:font-sans group-hover:font-viks">SPA created for metal-working shop to showcase different products. It has multiple pages and it is available in 2 languages on button toggle: Russian and English</p>
-          <button class=" bg-gray-600 rounded px-3 py-2 my-3 text-white font-viks md:font-sans group-hover:font-viks focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50"
-            on:click={() => (viewViks = true)}>View More
+          <p class="mt-3 text-left font-main2 md:font-sans group-hover:font-main2">Landing page that was created for International Child Art Foundation (ICAF) founder - Ashfaq Ishaq. It showcases his new book "Anti-Children" and serves as media addition to book itself - visitors can navigate to certain chapter and view artwork, videos and other book-related content.</p>
+          <button class=" bg-blue-600 rounded px-3 py-2 my-3 text-white font-main2 md:font-sans group-hover:font-main2 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+            on:click={() => (viewAshfaq = true)}>View More
           </button>
-          <ModalViks bind:open={viewViks} />
+          <ModalAshfaq bind:open={viewAshfaq} />
         </div>
       </div>
     </div>
