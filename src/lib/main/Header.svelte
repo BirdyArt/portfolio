@@ -48,7 +48,7 @@
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pt-3">
             {#each socialIcons as icon,i}
-              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4" transition:fly="{{ x: desktop, y: mobile, delay: 5000 + i*100, duration: 2000 }}" /></a>
+              <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4 hovers" transition:fly="{{ x: desktop, y: mobile, delay: 5000 + i*100, duration: 2000 }}" /></a>
             {/each}
           </div>
           <p class="text-xl py-3 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 6500 }}>

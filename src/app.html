@@ -14,31 +14,18 @@
       var initDot = false;
 
       setTimeout(function(){
-        var links = document.querySelectorAll("a");
-        var buttons = document.querySelectorAll("button")
+        var hovers = document.querySelectorAll(".hovers");
+        console.log(hovers)
 
-        for (var i = 0; i < links.length; i++) {
-          var selfLink = links[i];
+        for (var i = 0; i < hovers.length; i++) {
+          var selfHover = hovers[i];
 
-          selfLink.addEventListener("mouseover", function() {
+          selfHover.addEventListener("mouseover", function() {
             cursor.classList.add("custom-cursor--link");
             dot.classList.add("custom-cursor--link");
 
           });
-          selfLink.addEventListener("mouseout", function() {
-            cursor.classList.remove("custom-cursor--link");
-            dot.classList.remove("custom-cursor--link");
-          });
-        };
-
-        for (var i = 0; i < buttons.length; i++) {
-          var selfButton = buttons[i];
-
-          selfButton.addEventListener("mouseover", function() {
-            cursor.classList.add("custom-cursor--link");
-            dot.classList.add("custom-cursor--link");
-          });
-          selfButton.addEventListener("mouseout", function() {
+          selfHover.addEventListener("mouseout", function() {
             cursor.classList.remove("custom-cursor--link");
             dot.classList.remove("custom-cursor--link");
           });
