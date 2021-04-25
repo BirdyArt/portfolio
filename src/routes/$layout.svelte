@@ -7,5 +7,5 @@ import '../tailwind.css';
 
   <slot />
   
-<div class="custom-cursor bg-gray-300"></div>
+<div class="custom-cursor"></div>
 <div class="custom-dot bg-gray-600"></div>

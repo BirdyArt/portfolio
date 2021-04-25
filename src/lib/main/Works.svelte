@@ -44,7 +44,7 @@
         </div>
         <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-indigo-500 md:text-black group-hover:text-indigo-500">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <p on:click={() => (viewDshift = true)} class="hovers text-indigo-500 md:text-black text-3xl font-dshift md:font-sans group-hover:font-dshift group-hover:text-indigo-500">DShift</p>
+            <p on:click={() => (viewDshift = true)} class="hovers text-indigo-500 md:text-black text-2xl md:text-3xl font-dshift md:font-sans group-hover:font-dshift group-hover:text-indigo-500">DShift</p>
             <div class="text-white text-lg bg-indigo-500 font-main md:font-sans group-hover:font-main rounded-md ml-2 py-1 px-3">
               #Team
             </div>
@@ -57,7 +57,6 @@
           <button class="hovers bg-indigo-500 rounded px-3 py-2 my-3 text-white font-main md:font-sans group-hover:font-main focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50"
             on:click={() => (viewDshift = true)}>View More
           </button>
-          <ModalDshift bind:open={viewDshift} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-yellow-100 md:bg-gray-100 hover:bg-yellow-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10200, duration: 2000 }}">
@@ -66,7 +65,7 @@
         </div>
         <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-green-600 md:text-black group-hover:text-green-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <p on:click={() => (viewLibrarycard = true)} class="hovers text-green-600 md:text-black text-3xl font-semibold md:font-normal md:font-sans group-hover:font-semibold group-hover:text-green-600">LibraryCard</p>
+            <p on:click={() => (viewLibrarycard = true)} class="hovers text-green-600 md:text-black text-2xl md:text-3xl font-semibold md:font-normal md:font-sans group-hover:font-semibold group-hover:text-green-600">LibraryCard</p>
             <div class="text-white text-lg bg-green-600 font-normal md:font-sans group-hover:font-normal rounded-md ml-2 py-1 px-3">
               #Solo
             </div>
@@ -79,7 +78,6 @@
           <button class="hovers bg-green-600 rounded px-3 py-2 my-3 text-white font-normal md:font-sans group-hover:font-normal focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50"
             on:click={() => (viewLibrarycard = true)}>View More
           </button>
-          <ModalLibrarycard bind:open={viewLibrarycard} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-gray-200 md:bg-gray-100 hover:bg-gray-200 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10400, duration: 2000 }}">
@@ -88,7 +86,7 @@
         </div>
         <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-gray-600 md:text-black group-hover:text-gray-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <p on:click={() => (viewViks = true)} class="hovers text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600">ViksMetalWorks</p>
+            <p on:click={() => (viewViks = true)} class="hovers text-gray-600 font-semibold font-viks md:font-normal md:font-sans md:text-black text-2xl md:text-3xl group-hover:font-viks group-hover:font-semibold group-hover:text-gray-600">ViksMetalWorks</p>
             <div class="text-white text-lg bg-gray-600 rounded-md ml-2 py-1 px-3 font-viks md:font-sans group-hover:font-viks">
               #Solo
             </div>
@@ -101,7 +99,6 @@
           <button class="hovers bg-gray-600 rounded px-3 py-2 my-3 text-white font-viks md:font-sans group-hover:font-viks focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50"
             on:click={() => (viewViks = true)}>View More
           </button>
-          <ModalViks bind:open={viewViks} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-red-100 md:bg-gray-100 hover:bg-red-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10600, duration: 2000 }}">
@@ -110,7 +107,7 @@
         </div>
         <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-red-500 md:text-black group-hover:text-red-500">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <p on:click={() => (viewMapbox = true)} class="hovers text-red-500 md:text-black text-3xl font-mapbox md:font-sans group-hover:font-mapbox group-hover:text-red-500">MapboxApp</p>
+            <p on:click={() => (viewMapbox = true)} class="hovers text-red-500 md:text-black text-2xl md:text-3xl font-mapbox md:font-sans group-hover:font-mapbox group-hover:text-red-500">MapboxApp</p>
             <div class="text-white text-lg bg-red-500 rounded-md ml-2 py-1 px-3 font-mapbox md:font-sans group-hover:font-mapbox">
               #Solo
             </div>
@@ -123,7 +120,6 @@
           <button class="hovers bg-red-500 rounded px-3 py-2 my-3 text-white font-mapbox md:font-sans group-hover:font-mapbox focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50"
             on:click={() => (viewMapbox = true)}>View More
           </button>
-          <ModalMapbox bind:open={viewMapbox} />
         </div>
       </div>
       <div class="grid group mt-4 grid-cols-1 justify-items-center md:grid-cols-3 p-5 lg:px-10 bg-blue-100 md:bg-gray-100 hover:bg-blue-100 md:filter filter-none md:grayscale hover:filter-none rounded-xl lg:py-10" transition:fly="{{ x: desktop, y: mobile, delay: 10800, duration: 2000 }}">
@@ -132,7 +128,7 @@
         </div>
         <div class="col-span-2 mx-2 md:mx-5 mt-5 md:text-left text-blue-600 md:text-black group-hover:text-blue-600">
           <div class="flex justify-between md:justify-start items-center pb-3">
-            <p on:click={() => (viewAshfaq = true)} class="hovers text-blue-600 md:text-black text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600">AshfaqIshaq</p>
+            <p on:click={() => (viewAshfaq = true)} class="hovers text-blue-600 md:text-black text-2xl md:text-3xl font-ashfaq md:font-sans group-hover:font-ashfaq group-hover:text-blue-600">AshfaqIshaq</p>
             <div class="text-white text-lg bg-blue-600 font-main2 md:font-sans group-hover:font-main2 rounded-md ml-2 py-1 px-3">
               #Solo
             </div>
@@ -145,9 +141,13 @@
           <button class="hovers bg-blue-600 rounded px-3 py-2 my-3 text-white font-main2 md:font-sans group-hover:font-main2 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
             on:click={() => (viewAshfaq = true)}>View More
           </button>
-          <ModalAshfaq bind:open={viewAshfaq} />
         </div>
       </div>
     </div>
+    <ModalAshfaq bind:open={viewAshfaq} />
+    <ModalMapbox bind:open={viewMapbox} />
+    <ModalViks bind:open={viewViks} />
+    <ModalLibrarycard bind:open={viewLibrarycard} />
+    <ModalDshift bind:open={viewDshift} />
   </main>
 {/if}

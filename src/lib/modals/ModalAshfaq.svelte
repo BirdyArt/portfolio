@@ -11,11 +11,11 @@ let clickOutside = true;
     <h2 class="font-main text-3xl text-center py-2 font-semibold">What it can do?</h2>
     <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Hero page + carousel</h3>
     <img class="mx-auto rounded-lg" src="/gifs/ashfaq/hero.gif" width="600" alt="DShift Login" />
-    <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Sidebar navigation</h3>
+    <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Sidebar navigation</h3>
     <img class="mx-auto rounded-lg" src="/gifs/ashfaq/sidebar.gif" width="600" alt="DShift Login" />
-    <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Navigation animation + scroll</h3>
+    <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Navigation animation + scroll</h3>
     <img class="mx-auto rounded-lg" src="/gifs/ashfaq/scroll.gif" width="600" alt="DShift Login" />
-    <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Gallery with lightbox</h3>
+    <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Gallery with lightbox</h3>
     <img class="mx-auto rounded-lg" src="/gifs/ashfaq/gallery.gif" width="600" alt="DShift Login" />
     <h2 class="font-main text-3xl text-center py-4 font-semibold">Links</h2>
     <div class="text-center">

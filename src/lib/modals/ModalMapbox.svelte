@@ -11,9 +11,9 @@ let clickOutside = true;
     <h2 class="font-main text-3xl text-center py-2 font-semibold">What it can do?</h2>
     <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Move map and view marker info on hover</h3>
     <img class="mx-auto rounded-lg" src="/gifs/mapbox/hover.gif" width="600" alt="DShift Login" />
-    <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Toggle sidebar menu with list of places</h3>
+    <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Toggle sidebar menu with list of places</h3>
     <img class="mx-auto rounded-lg" src="/gifs/mapbox/toggle.gif" width="600" alt="DShift Login" />
-    <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Filter places on the list and map</h3>
+    <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Filter places on the list and map</h3>
     <img class="mx-auto rounded-lg" src="/gifs/mapbox/filter.gif" width="600" alt="DShift Login" />
     <h2 class="font-main text-3xl text-center py-4 font-semibold">Links</h2>
     <div class="text-center">

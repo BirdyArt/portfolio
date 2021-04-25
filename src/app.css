@@ -22,6 +22,8 @@ body {
   transition: transform 350ms ease;
   transform: translate(-50%, -50%) scale(.3);
   z-index: 1000;
+  background-color: #D1D5DB;
+
 }
 
 .custom-dot {
@@ -36,4 +38,5 @@ body {
 }
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(0.5);
+  background-color: #FCA5A5;
 }
