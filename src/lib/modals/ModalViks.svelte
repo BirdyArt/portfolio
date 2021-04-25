@@ -5,18 +5,18 @@ let clickOutside = true;
 </script>
 
 <ModalBox bind:open {clickOutside}>
-  <div class="p-6 md:p-12 bg-gray-200">
+  <div class="p-6 md:p-12 bg-gray-200 text-gray-600">
     <h1 class="font-viks font-semibold text-5xl text-center pb-3">ViksMetalWorks</h1>
-    <p class="py-2">A blazing fast shift management web app sporting a surprisingly simple interface. Built using Svelte Kit & Tailwind!</p>
+    <p class="py-2">SPA created for metal-working shop to showcase different products. It has multiple pages and it is available in 2 languages on button toggle: Russian and English</p>
     <h2 class="font-main text-3xl text-center py-2 font-semibold">What it can do?</h2>
     <h3 class="text-center pb-4 pt-4 font-semibold text-lg">Hero page, reviews carousel, accordion, short contact form </h3>
-    <img class="mx-auto rounded-lg" src="/gifs/viks/hero.gif" width="600" alt="DShift Login" />
+    <img class="mx-auto rounded-lg" src="/gifs/viks/hero.gif" width="600" alt="hero" />
     <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Two languages, on button toggle</h3>
-    <img class="mx-auto rounded-lg" src="/gifs/viks/language.gif" width="600" alt="DShift Login" />
+    <img class="mx-auto rounded-lg" src="/gifs/viks/language.gif" width="600" alt="language" />
     <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Fully functioning contact form and map</h3>
-    <img class="mx-auto rounded-lg" src="/gifs/viks/form.gif" width="600" alt="DShift Login" />
+    <img class="mx-auto rounded-lg" src="/gifs/viks/form.gif" width="600" alt="form" />
     <h3 class="text-center pb-4 pt-8 font-semibold text-lg">Gallery with carousel on image click</h3>
-    <img class="mx-auto rounded-lg" src="/gifs/viks/gallery.gif" width="600" alt="DShift Login" />
+    <img class="mx-auto rounded-lg" src="/gifs/viks/gallery.gif" width="600" alt="gallery" />
     <h2 class="font-main text-3xl text-center py-4 font-semibold">Links</h2>
     <div class="text-center">
       <a href="https://github.com/BirdyArt/ViksMetalWorks" class="text-xl mr-5 font-main font-semibold hover:opacity-50" target="_blank">Github</a>
