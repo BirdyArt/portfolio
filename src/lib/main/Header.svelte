@@ -40,10 +40,10 @@
 
 {#if visible}
   <div class="pt-8 md:pt-24 px-8 2xl:px-72 xl:px-40 lg:px-12">
-    <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative md:filter filter-none md:grayscale hover:filter-none group">
+    <div class=" group flex flex-wrap md:flex-nowrap justify-center md:justify-between container mx-auto relative md:filter filter-none md:grayscale hover:filter-none">
       <div class="items-center text-center md:text-left bg-green-100 rounded-xl md:pl-8 pb-0 pt-48 md:pt-6 lg:py-4 lg:pb-0 -mt-40 md:mt-0 w-full order-last md:order-none" transition:fly="{{ x: desktop, y: mobile, delay: 4300, duration: 1500 }}">
         <div>
-          <p class="text-3xl 2xl:pt-2 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 5000 }}>
+          <p class="text-3xl 2xl:pt-2 font-display md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 5000 }}>
             Hi! I'm Artem Sobolev
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pt-3">
@@ -51,7 +51,7 @@
               <a href={icon.href} target="_blank"><img src={icon.src} alt={icon.alt} width="30" class="mx-2 md:mr-4 hovers" transition:fly="{{ x: desktop, y: mobile, delay: 5000 + i*100, duration: 2000 }}" /></a>
             {/each}
           </div>
-          <p class="text-xl py-3 font-header md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 6500 }}>
+          <p class="text-xl py-3 font-display md:font-sans group-hover:font-display text-green-700 md:text-black group-hover:text-green-700" in:typewriterAction={{ speed: 50, delay: 6500 }}>
             Frontend Developer skilled in:
           </p>
           <div class="flex flex-wrap items-center justify-center md:justify-start pr-0 md:pr-48 lg:pr-0">
