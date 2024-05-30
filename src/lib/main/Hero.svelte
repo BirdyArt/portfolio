@@ -1,75 +1,75 @@
 <script>
-	import { fade, draw, fly } from 'svelte/transition';
-  import { onMount } from 'svelte';
+  import { fade, draw, fly } from "svelte/transition";
+  import { onMount } from "svelte";
 
-	let visible = false;
-  onMount(() => visible = true);
-  setTimeout(() => visible = false, 3500);
-
+  let visible = false;
+  onMount(() => (visible = true));
+  setTimeout(() => (visible = false), 3500);
 
   const inner = `M212.9 363.3 c-57.6 -57.7 -57.7 -57.8 -58.8 -63.1 -0.7 -3.3 -1.1 -19.3 -1.1 -42.2 l0 -37 -33.5 0 -33.6 0 -2.4 -2.5 c-2.5 -2.5 -3.3 -6.8 -1.6 -9.4 2.2 -3.4 75.9 -76.4 78 -77.2 1.3 -0.5 3.3 -0.7 4.5 -0.3 1.1 0.3 18.4 16.8 38.3 36.7 l36.3 36.1 19.8 -19.7 c17.1 -16.9 20.8 -20.1 26.3 -22.6 l6.4 -2.9 54.7 -0.7 54.7 -0.8 3.6 3.6 c2.7 2.7 3.5 4.3 3.5 7.1 0 7.8 -3.8 12.5 -38.9 48.4 -18.5 19 -45.4 46.7 -59.8 61.5 l-26.3 27.1 -0.2 55.2 -0.3 55.2 -2.4 2.6 c-1.8 1.9 -3.5 2.6 -6 2.6 -3.4 0 -6.5 -2.9 -61.2 -57.7z m57.1 -2.8 c0 -22.3 -0.3 -40.5 -0.8 -40.5 -0.4 0 -9.6 9.1 -20.4 20.3 l-19.6 20.4 19.5 20.1 c10.7 11.1 19.9 20.2 20.4 20.2 0.5 0 0.9 -16.6 0.9 -40.5z m-30.9 -28.2 c9.6 -9.8 25.1 -25.7 34.4 -35.3 25.1 -25.8 87.7 -90.1 105.3 -108.2 8.3 -8.6 15.2 -16.1 15.2 -16.8 0 -0.9 -12.1 -1.1 -50.2 -0.8 -46.5 0.3 -50.6 0.5 -53.8 2.2 -1.9 1 -30.4 28.6 -63.2 61.4 -47.6 47.5 -59.8 60.2 -59.8 62.2 0 2 5.6 8.1 25.3 27.8 16.7 16.6 26 25.2 27.4 25.2 1.3 0 8 -6.1 19.4 -17.7z m-10.1 -118.9 c0 -0.5 -14.2 -15.1 -31.5 -32.4 l-31.5 -31.5 0 64 0 64 31.5 -31.6 c17.3 -17.4 31.5 -32 31.5 -32.5z m-76 -31.1 l0 -26.8 -26 26 c-14.3 14.3 -26 26.3 -26 26.7 0 0.5 11.7 0.8 26 0.8 l26 0 0 -26.7z`;
   const outer = `M237 472.8 c-14.6 -0.7 -28 -2.9 -43.7 -6.9 -58.6 -15 -110.2 -55.6 -139.5 -109.6 -18.6 -34.3 -26.8 -67.2 -26.8 -108 0 -26.9 3 -45.4 11.6 -70.4 11.4 -33.3 28.2 -60 53.8 -85.4 27.1 -27 53.5 -43.3 89.1 -55 36.1 -11.9 77.6 -14 115 -6 86.9 18.7 154.9 87.7 172.4 175.2 4.6 22.8 5.3 58.5 1.6 79.3 -8.4 47.3 -29.4 87.9 -62.4 121.1 -13.1 13.1 -21.1 19.6 -36.2 29.6 -39.9 26.3 -86.2 38.7 -134.9 36.1z m29 -17.8 c74.5 -6.5 138.1 -50.3 170 -117.2 43.9 -92 12.5 -203.4 -73.5 -260.1 -38.1 -25.1 -86.7 -37.2 -131.6 -32.7 -72.2 7.3 -132.4 48.5 -165 113 -34.7 68.7 -27.2 152.5 19.3 215.2 7.6 10.2 22.5 25.8 33.9 35.3 40.1 33.6 95.1 51 146.9 46.5z`;
 </script>
 
-<style>
-	svg {
-		width: 100%;
-		height: 100%;
-    position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-    z-index:20;
-    background-color: white;
-	}
-
-	path {
-		fill: white;
-		opacity: 1;
-	}
-
-	.centered {
-		font-size: 12vw;
-		width: 100%;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		font-family: 'Overpass';
-		letter-spacing: 0.12em;
-		color: #676778;
-		font-weight: 400;
-    z-index:20;
-	}
-
-	.centered span {
-		will-change: filter;
-	}
-</style>
-
 {#if visible}
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-		<g out:fade="{{duration: 200}}" opacity=0.2>
-			<path
-				in:draw="{{duration: 1700, delay: 500}}"
-				style="stroke: #000; stroke-width: 3;"
-				d={outer}
-			/>
-			<path
-				in:draw="{{duration: 1700}}"
-				style="stroke:#000; stroke-width: 3"
-				d={inner}
-			/>
-		</g>
-	</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <g out:fade={{ duration: 200 }} opacity="0.2">
+      <path
+        in:draw={{ duration: 1700, delay: 500 }}
+        style="stroke: #000; stroke-width: 3;"
+        d={outer}
+      />
+      <path
+        in:draw={{ duration: 1700 }}
+        style="stroke:#000; stroke-width: 3"
+        d={inner}
+      />
+    </g>
+  </svg>
 
-	<div class="centered text-center" out:fly="{{y: -20, duration: 800}}">
-		{#each 'BIRDY ART' as char, i}
-			<span
-				in:fade="{{delay: 1500 + i * 150, duration: 800}}"
-			>{char}</span>
-		{/each}
-	</div>
+  <div class="centered text-center" out:fly={{ y: -20, duration: 800 }}>
+    {#each "BIRDY ART" as char, i}
+      <span in:fade={{ delay: 1500 + i * 150, duration: 800 }}>{char}</span>
+    {/each}
+  </div>
 {/if}
 
-<link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Overpass:100,400"
+  rel="stylesheet"
+/>
+
+<style>
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: white;
+  }
+
+  path {
+    fill: white;
+    opacity: 1;
+  }
+
+  .centered {
+    font-size: 12vw;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Overpass";
+    letter-spacing: 0.12em;
+    color: #676778;
+    font-weight: 400;
+    z-index: 20;
+  }
+
+  .centered span {
+    will-change: filter;
+  }
+</style>

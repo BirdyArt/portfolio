@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<script>
-		document.addEventListener("DOMContentLoaded", function(event) {
-      
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
       if (window.innerWidth <= 768) {
-        document.getElementsByTagName('BODY')[0].style.cursor = 'default';
+        document.getElementsByTagName("BODY")[0].style.cursor = "default";
       } else {
         var cursor = document.querySelector(".custom-cursor");
         var dot = document.querySelector(".custom-dot");
@@ -13,36 +12,34 @@
       var initCursor = false;
       var initDot = false;
 
-      setTimeout(function(){
+      setTimeout(function () {
         var hovers = document.querySelectorAll(".hovers");
-        console.log(hovers)
+        console.log(hovers);
 
         for (var i = 0; i < hovers.length; i++) {
           var selfHover = hovers[i];
 
-          selfHover.addEventListener("mouseover", function() {
+          selfHover.addEventListener("mouseover", function () {
             cursor.classList.add("custom-cursor--link");
             dot.classList.add("custom-cursor--link");
-
           });
-          selfHover.addEventListener("mouseout", function() {
+          selfHover.addEventListener("mouseout", function () {
             cursor.classList.remove("custom-cursor--link");
             dot.classList.remove("custom-cursor--link");
           });
-        };
-      },1000);
-      
+        }
+      }, 1000);
 
-      window.onmousemove = function(e) {
+      window.onmousemove = function (e) {
         var mouseX = e.clientX;
         var mouseY = e.clientY;
 
         if (!initCursor && !initDot) {
           TweenLite.to(cursor, 1, {
-            opacity: 0.5
+            opacity: 0.5,
           });
           TweenLite.to(dot, 1, {
-            opacity: 1
+            opacity: 1,
           });
           initCursor = true;
           initDot = true;
@@ -50,37 +47,57 @@
 
         TweenLite.to(cursor, 0.5, {
           top: mouseY + "px",
-          left: mouseX + "px"
+          left: mouseX + "px",
         });
-        
+
         TweenLite.to(dot, 0, {
           top: mouseY + "px",
-          left: mouseX + "px"
+          left: mouseX + "px",
         });
       };
-
     });
-	</script>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel='manifest' href='manifest.json'>
-		<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>BirdyArt | Portfolio</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-		%svelte.head%
-	</head>
-	<body>
-		<div id="svelte">%svelte.body%</div>
-	</body>
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BirdyArt | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    %svelte.head%
+  </head>
+  <body>
+    <div id="svelte">%svelte.body%</div>
+  </body>
 </html>

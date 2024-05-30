@@ -1,8 +1,6 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-    "./src/**/*.svelte"
-  ],
+  mode: "jit",
+  purge: ["./src/**/*.svelte"],
   theme: {
     fontFamily: {
       sans: "Roboto Condensed",
@@ -12,7 +10,7 @@ module.exports = {
       mapbox: "Open Sans",
       viks: "Play",
       main2: "Raleway",
-      display: "Righteous"
-    }
-  }
-}
+      display: "Righteous",
+    },
+  },
+};
