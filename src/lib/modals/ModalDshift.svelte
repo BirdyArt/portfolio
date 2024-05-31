@@ -26,7 +26,7 @@
       alt="DShift Login"
     />
     <h3 class="text-center pb-4 pt-8 font-semibold text-lg">
-      Add employees quickly or fill full profile (you can view, edit & delete
+      Add employees quickly or fill full profile (you can view, edit, and delete
       them too)
     </h3>
     <img
